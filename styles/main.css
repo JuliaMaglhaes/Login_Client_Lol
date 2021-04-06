@@ -1,0 +1,28 @@
+:root{
+    --container-fundo: #f9f9f9;
+    --blocos:#ededed;
+    --fonte-cor-titulos:#191211;
+    --fonte-cor-opcoes:#b2b2b2;
+    --fonte-cor-salvar:#999999;
+    --fundo-help: #B2B2B2;
+    --fonte-cor-input:#a1a1a1;
+    --facebook-fundo:#1877f2;
+    --facebook-borda: #0966de;
+    --google-borda:#f3f3f3;
+    --borda-selecao:#e8e8e8;
+    --verificado:#bc252a;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+#container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+}

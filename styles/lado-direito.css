@@ -1,0 +1,7 @@
+#imagem-container{
+    background-image: url(../assets/img/c-o-champion-lillia-splash.jpg);
+    background-size: cover;
+    display: block;
+    position: relative;
+    width: 63%;
+}
