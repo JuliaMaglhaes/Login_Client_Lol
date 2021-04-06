@@ -19,8 +19,41 @@
     align-items: center;
     text-align: center;
     z-index: 99;
+    color:white;
 }
 
+.mensagem{
+    display: none;
+    position: absolute;
+    z-index:  999;
+    background-color: var(--box-cor);
+    width:23%;
+    left:33%;
+    margin-top:10px;
+    border-radius: 5px;
+    padding:25px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.432);
+}
+
+#triangulo-para-esquerda {
+    width: 0; 
+    height: 0; 
+    position: absolute;
+    top: 18px;
+    left: -10px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent; 
+    border-right:10px solid #f9f9f9; 
+  }
+  
+
+.mensagem > p{
+    margin-top:10px;
+}
+
+.help:hover .mensagem{
+    display: block;
+}
 
 .logo{
     margin:40px;
@@ -49,6 +82,10 @@
     padding:15px;
 }
 
+.campos-form input:hover{
+    background-color: var(--blocos-hover);
+}
+
 .redes-sociais{
     display: flex;
     width: 71%;
@@ -75,12 +112,12 @@
 .facebook{
     background-color: var(--facebook-fundo);
     border:1px solid var(--facebook-borda);
-    transition: 0.5s;
+    transition: 0.1s;
 }
 
 .facebook:hover{
     background-color: var(--facebook-borda);
-    transition: 0.5s;
+    transition: 0.1s;
 }
 
 .apple{
@@ -90,11 +127,16 @@
 .google{
     background-color: white;
     border:1px solid var(--google-borda);
-    transition: 0.5s;
+    transition: 0.1s;
 }
 .google:hover{
     background-color: var(--google-borda);
-    transition: 0.5s;
+    transition: 0.1s;
+}
+
+.apple:hover{
+    background-color: var(--borda-apple);
+    transition: 0.1s;
 }
 
 .salvar{

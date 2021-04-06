@@ -5,22 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Client League of Legends</title>
+    <link rel="shortcut icon" href="assets/img/icon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/estilo.css">
     <link rel="stylesheet" href="styles/lado-direito.css">
     <link rel="stylesheet" href="styles/main.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+    <script src="https://kit.fontawesome.com/2ff65cbf87.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="container">
-        <div class="help">
+        <div class="mensagem">
+            <p>Você não precisa mais selecionar uma região antes de fazer login. Quando fizer login,
+                a região associada à sua conta será atualizada automaticamente.</p>
+            <p>Se estiver com problemas para fazer login, talvez precise atualizar sua conta
+            </p>
+            <div id="triangulo-para-esquerda"></div>
+        </div>
+        <div id="help" class="help">
             <span>?</span>
-            <div class="mensagem"></div>
         </div>
         <div id="login-container">
                 <img class="logo" src='assets/img/logo.jpg' alt="logo">
                 <h1>Fazer login</h1>
                 <div class="campos-form">
-                    <input type="text" id="usuario" placeholder="NOME DE USUÁRIO">
-                    <input type="text" id="senha" placeholder="SENHA">
+                    <input type="text" id="usuario" placeholder="NOME DE USUÁRIO" autofocus>
+                    <input type="password" id="senha" placeholder="SENHA">
+                    <div id="mostrar" onClick="FuncaoMostrar()">
+                        <button>a</button>
+                    </div>
+                    
                 </div>
                 <div class="redes-sociais">
                     <div class="facebook rede">
@@ -43,10 +56,11 @@
                 </div>
                 <div class="opcoes">
                     <a href="#">NÃO CONSEGUE INICIAR SESSÃO</a>
-                    <a href="#">CRIAR CONTA</a>
+                    <a href="https://signup.br.leagueoflegends.com/pt/signup/index#/">CRIAR CONTA</a>
                 </div>
             </div>
         <div id="imagem-container"></div>
     </div>
+<script src="scripts/app.js"></script>
 </body>
 </html>
