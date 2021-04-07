@@ -30,7 +30,7 @@
                 <img class="logo" src='assets/img/logo3.png' alt="logo">
                 <h1>Fazer login</h1>
                 <div class="campos-form" >
-                    <input type="text" id="usuario" placeholder="NOME DE USUÁRIO" autofocus>
+                    <input type="text" id="usuario" onblur="onUsuarioBlur()" placeholder="NOME DE USUÁRIO" autofocus>
                     <div class="campoSenha">
                         <input class="senha_foco" id="senha" onfocus="onPasswordFocus()" onblur="onPasswordBlur()" type="password"  placeholder="SENHA">
                         <span id="mostrar" onclick="funcaoMostrar()">
