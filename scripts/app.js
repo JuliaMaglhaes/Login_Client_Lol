@@ -61,4 +61,26 @@ function onUsuarioBlur(){
     
 }
 
+document.getElementById("help").onmouseover = function(){
+    document.getElementById("mensagem").style.display = "block";
+}
 
+var helpMensagem = 0;
+
+document.getElementById("mensagem").onmouseover = function(){
+    helpMensagem = 1;
+}
+document.getElementById("mensagem").onmouseout = function(){
+    helpMensagem = 0;
+}
+
+document.getElementById("help").onmouseout = function(){
+    setTimeout( function(){
+        if(helpMensagem == 1){
+            document.getElementById("mensagem").style.display = "block";
+        }
+        else{
+            document.getElementById("mensagem").style.display = "none";
+        }
+    }, 200);
+}
