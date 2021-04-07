@@ -115,9 +115,10 @@ img#seta-vermelha{
     margin:10px 0 10px 0;
     color: var(--fonte-cor-input);
     font-weight: bold;
-    padding:15px;
-    
+    padding:15px;   
 }
+
+
 
 .campos-form input:hover{
     background-color: var(--blocos-hover);
