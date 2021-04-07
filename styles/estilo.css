@@ -289,4 +289,16 @@ img#seta-vermelha{
     font-weight: 800;
 }
 
-
+#status{
+    display: none;
+    position: relative;
+    z-index: 200;
+    margin-bottom: 10px;
+    justify-content: left;
+    text-align: left;
+    left:-70px;
+    top:0px;
+    color: var(--box-cor-letra-erro);
+    font-family: Lexend;
+    font-size: 13px;
+}

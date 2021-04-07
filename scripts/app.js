@@ -12,7 +12,7 @@ function funcaoEsconder() {
     document.getElementById("mostrarIcon").className = "fas fa-eye-slash";
 }
 
-// Visibilidade
+// Visibilidade e erro
 let visibleState = true;
 const icon_eye = document.getElementById("mostrar");
 
@@ -25,11 +25,22 @@ function onPasswordBlur(){
     var inputSenha = document.getElementById("senha");
     var inputUsuario = document.getElementById("usuario");
 
-    if (inputSenha.value && inputUsuario.value) {
+    if (inputSenha.value.length && inputUsuario.value.length < 2){
+        document.getElementById("usuario").style.backgroundColor = "#f4e3f5";
+        document.getElementById("status").style.display = "block";
+    }
+    else if (inputSenha.value.length && inputUsuario.value.length >= 2) {
+        document.getElementById("usuario").style.backgroundColor = "#ededed";
         document.getElementById("fazerLogin").style.backgroundColor = "#bc252a";
+        document.getElementById("status").style.display = "none";
+    }
+    else if(inputUsuario.value.length < 2 && inputSenha.value) {
+        document.getElementById("usuario").style.backgroundColor = "#f4e3f5";
+        document.getElementById("status").style.display = "block";
     }
     else{
         document.getElementById("fazerLogin").style.backgroundColor = "transparent";
+        document.getElementById("status").style.display = "none";
     }
 }
 
@@ -37,12 +48,17 @@ function onUsuarioBlur(){
     var inputSenha = document.getElementById("senha");
     var inputUsuario = document.getElementById("usuario");
 
-    if (inputUsuario.value && inputSenha.value) {
+    if (inputUsuario.value.length >= 2 && inputSenha.value) {
+        document.getElementById("usuario").style.backgroundColor = "#ededed";
         document.getElementById("fazerLogin").style.backgroundColor = "#bc252a";
+        document.getElementById("status").style.display = "none";
     }
-    else{
+    else if (inputSenha.value.length && inputUsuario.value.length < 2){
+        document.getElementById("usuario").style.backgroundColor = "#f4e3f5";
         document.getElementById("fazerLogin").style.backgroundColor = "transparent";
+        document.getElementById("status").style.display = "block";
     }
+    
 }
 
 
