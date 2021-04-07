@@ -1,11 +1,3 @@
-$(function(){
-    $(".help").mouseover(function(){
-        $(".mensagem").css("display","block");
-    })
-    $(".help").mouseout(function(){
-        $(".mensagem").css("display","none");
-    })
-});
 
 // Olho
 function funcaoMostrar() {
@@ -52,3 +44,5 @@ function onUsuarioBlur(){
         document.getElementById("fazerLogin").style.backgroundColor = "transparent";
     }
 }
+
+

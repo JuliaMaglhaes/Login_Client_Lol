@@ -18,8 +18,8 @@
     position: absolute;
     width: 15px;
     height: 15px;
-    left:30%;
-    top:5%;
+    left: 30%;
+    top: 5%;
     background-color: var(--fundo-help);
     border-radius: 50%;
     align-items: center;
@@ -28,17 +28,25 @@
     color:white;
 }
 
+.help:hover .mensagem{
+    display: block;
+}
+
 .mensagem{
     display: none;
     position: absolute;
+    color: black;
     z-index:  999;
     background-color: var(--box-cor);
-    width:23%;
-    left:33%;
+    width: 320px;
+    height: 230px;
+    top: -30px;
+    left:40px;
     margin-top:10px;
     border-radius: 5px;
     padding:25px;
     box-shadow: 1px 5px 5px 5px rgba(0, 0, 0, 0.432);
+    text-align: left;
 }
 
 #triangulo-para-esquerda {
@@ -59,6 +67,7 @@
 .mensagem p{
     font-family: Lexend;
     font-size: 14px;
+    font-weight: 500;
 }
 
 .mensagem > p{

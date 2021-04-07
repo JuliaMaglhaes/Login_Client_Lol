@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@500&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap');
 
 :root{
     --container-fundo: #f9f9f9;
@@ -17,6 +18,8 @@
     --borda-selecao:#e8e8e8;
     --verificado:#bc252a;
     --detalhes:#d950e5;
+    --box-cor-erro:#f4e3f5;
+    --box-cor-letra-erro: #bf2dcd;
 }
 
 *{
