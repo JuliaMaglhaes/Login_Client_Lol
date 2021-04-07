@@ -1,8 +1,35 @@
 #imagem-container{
     background-image: url(../assets/img/c-o-champion-lillia-splash.jpg);
     background-size: cover;
-    display: block;
     position: relative;
     width: 63%;
     height: 100vh;
+    display: flex;
+}
+
+.info{
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    width:60px;
+    height:60px;
+    background-color: var(--detalhes);
+    top:10px;
+    margin-top:10px;
+    margin-left:10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+}
+
+.info a{
+    text-decoration: none;
+}
+
+.info span{
+    color:black;
+    position: relative;
+    z-index: 100000;
+    text-align: center;
+    font-size: 30px;
 }

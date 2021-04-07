@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@500&family=Poppins&display=swap');
+
 :root{
     --container-fundo: #f9f9f9;
     --box-cor:#f9f9f9;
@@ -29,4 +31,5 @@
     height: 100vh;
     display: flex;
     overflow: hidden;
+    
 }

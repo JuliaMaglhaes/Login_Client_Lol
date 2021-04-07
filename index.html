@@ -17,23 +17,23 @@
         <div class="mensagem">
             <p>Você não precisa mais selecionar uma região antes de fazer login. Quando fizer login,
                 a região associada à sua conta será atualizada automaticamente.</p>
-            <p>Se estiver com problemas para fazer login, talvez precise atualizar sua conta
-            </p>
+            <p>Se estiver com problemas para fazer login, talvez precise <span>atualizar sua conta</span>. <img id="seta-vermelha" src="assets/img/seta2.png"><a href="#"></a></p>
             <div id="triangulo-para-esquerda"></div>
         </div>
         <div id="help" class="help">
             <span>?</span>
         </div>
         <div id="login-container">
-                <img class="logo" src='assets/img/logo.jpg' alt="logo">
+                <img class="logo" src='assets/img/logo3.png' alt="logo">
                 <h1>Fazer login</h1>
-                <div class="campos-form">
+                <div class="campos-form" >
                     <input type="text" id="usuario" placeholder="NOME DE USUÁRIO" autofocus>
-                    <input type="password" id="senha" placeholder="SENHA">
-                    <div id="mostrar" onClick="FuncaoMostrar()">
-                        <button>a</button>
+                    <div class="campoSenha">
+                        <input class="senha_foco" id="senha" onfocus="onPasswordFocus()" onblur="onPasswordBlur()" type="password"  placeholder="SENHA">
+                        <span id="mostrar" onclick="funcaoMostrar()">
+                            <i id="mostrarIcon" class="fas fa-eye"></i>
+                        </span>
                     </div>
-                    
                 </div>
                 <div class="redes-sociais">
                     <div class="facebook rede">
@@ -51,7 +51,7 @@
                     <span class="check"></span>
                     <label class="checkbox" for="check">Manter login</label>
                 </div>
-                <div class="prosseguir">
+                <div class="prosseguir" id="fazerLogin" onwaiting="validacaoForm()">
                     <img class="seta" src="assets/img/seta.png" alt="prosseguir">
                 </div>
                 <div class="opcoes">
@@ -59,7 +59,11 @@
                     <a href="https://signup.br.leagueoflegends.com/pt/signup/index#/">CRIAR CONTA</a>
                 </div>
             </div>
-        <div id="imagem-container"></div>
+        <div id="imagem-container">
+            <div class="info">
+                <a href="https://github.com/JuliaMaglhaes"><span>!</span></a>
+            </div>
+        </div>
     </div>
 <script src="scripts/app.js"></script>
 </body>
