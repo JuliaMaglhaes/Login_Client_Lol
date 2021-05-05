@@ -58,7 +58,7 @@ function onUsuarioBlur(){
         document.getElementById("fazerLogin").style.backgroundColor = "transparent";
         document.getElementById("status").style.display = "block";
     }
-    
+ 
 }
 
 document.getElementById("help").onmouseover = function(){
